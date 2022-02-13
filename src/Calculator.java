@@ -7,30 +7,29 @@ public class Calculator
 		Scanner sc = new Scanner(System.in);
 		Scanner bc = new Scanner(System.in);
 		System.out.println("Enter two whole numbers...");
-		int input = sc.nextInt();
-		int input2 = sc.nextInt();
+		float input = sc.nextFloat();
+		float input2 = sc.nextFloat();
 		System.out.println("Would you like to add, subtract, multiply or divide these values?");
 		String calculate = bc.nextLine();
 		if(calculate.equalsIgnoreCase("add"))
 		{
-			int add = input + input2;
+			float add = input + input2;
 			System.out.println(add);		
 		}
 		else if (calculate.equalsIgnoreCase("subtract"))
 		{
-			int subtract = input - input2;
+			double subtract = input - input2;
 			System.out.println(subtract);		
 		}
 		else if(calculate.equalsIgnoreCase("multiply"))
 		{
-			int mult = input * input2;
+			double mult = input * input2;
 			System.out.println(mult);
 		}
 		else if(calculate.equalsIgnoreCase("divide")) 
 		{
-			int divide = input / input2;
+			double divide = input / input2;
 			System.out.println(divide);
 		}
-		
 	}
 }
