@@ -18,18 +18,25 @@ public class Calculator
 		}
 		else if (calculate.equalsIgnoreCase("subtract"))
 		{
-			double subtract = input - input2;
+			float subtract = input - input2;
 			System.out.println(subtract);		
 		}
 		else if(calculate.equalsIgnoreCase("multiply"))
 		{
-			double mult = input * input2;
+			float mult = input * input2;
 			System.out.println(mult);
 		}
 		else if(calculate.equalsIgnoreCase("divide")) 
 		{
-			double divide = input / input2;
+			if(input2 == 0)
+			{
+			System.out.println("Error: Divide by Zero");
+			}
+			else 
+			{
+			float divide = input / input2;
 			System.out.println(divide);
+			}
 		}
 	}
 }
