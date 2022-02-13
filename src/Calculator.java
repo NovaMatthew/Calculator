@@ -9,7 +9,7 @@ public class Calculator
 		System.out.println("Enter two whole numbers...");
 		int input = sc.nextInt();
 		int input2 = sc.nextInt();
-		System.out.println("Would you like to add or subtract?");
+		System.out.println("Would you like to add, subtract, multiply or divide these values?");
 		String calculate = bc.nextLine();
 		if(calculate.equalsIgnoreCase("add"))
 		{
@@ -21,5 +21,16 @@ public class Calculator
 			int subtract = input - input2;
 			System.out.println(subtract);		
 		}
+		else if(calculate.equalsIgnoreCase("multiply"))
+		{
+			int mult = input * input2;
+			System.out.println(mult);
+		}
+		else if(calculate.equalsIgnoreCase("divide")) 
+		{
+			int divide = input / input2;
+			System.out.println(divide);
+		}
+		
 	}
 }
